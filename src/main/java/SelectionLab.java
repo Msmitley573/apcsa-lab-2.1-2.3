@@ -1,4 +1,4 @@
-/**
+ /**
  * AP CSA Lab 2.1-2.3 - Boolean Expressions and if Statements
  *
  * Fill in the body of each method in SelectionLab below. Do not rename
@@ -46,7 +46,7 @@ public class SelectionLab
     public static boolean isChild(int age)
     {
         // TODO Part 1: return a Boolean expression that is true for 12 and under
-        return false;
+        return age <= 12;
     }
 
     // ---------------------------------------------------------------
@@ -68,7 +68,7 @@ public class SelectionLab
     public static boolean isMatinee(int hour)
     {
         // TODO Part 2: return a Boolean expression that is true before hour 17
-        return false;
+        return hour < 17;
     }
 
     // ---------------------------------------------------------------
@@ -100,7 +100,7 @@ public class SelectionLab
     public static boolean wants3D(String choice)
     {
         // TODO Part 3: compare the characters of choice with "y"
-        return false;
+        return choice.equals("y");
     }
 
     // ---------------------------------------------------------------
@@ -174,7 +174,14 @@ public class SelectionLab
     public static int addSurcharge(int cents, boolean wants3D)
     {
         // TODO Part 5: add 350 only when wants3D is true, then return the price
-        return 0;
+        if (wants3D=(true)) 
+            {
+          cents = 900;
+        } else {
+
+           cents += 350; 
+        }
+        return cents;
     }
 
     // ---------------------------------------------------------------
