@@ -136,7 +136,16 @@ public class SelectionLab
     public static int startingPrice(int hour)
     {
         // TODO Part 4: use if-else to return 900 or 1300
-        return 0;
+        int cents;
+        if (hour < 17)
+        {
+            cents=900;
+        }
+        else
+        {
+            cents=1300;
+        }
+        return cents;
     }
 
     // ---------------------------------------------------------------
@@ -175,9 +184,11 @@ public class SelectionLab
     {
         // TODO Part 5: add 350 only when wants3D is true, then return the price
         if (wants3D=(true)) 
-            {
-          cents = 900;
-        } else {
+        {
+            cents = 900;
+        } 
+        else 
+        {
 
            cents += 350; 
         }
